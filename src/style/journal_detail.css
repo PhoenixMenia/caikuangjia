@@ -1,0 +1,199 @@
+.container{
+    width: 100%;
+    overflow: auto;
+  }
+  .inner{
+    width: 1530px;
+    margin: 0 auto;
+  }
+  
+  /* header */
+  .header .inner{
+    background: #ffffff;
+    height: 204px;
+  }
+  .header .inner .top{
+    height: 155px;
+    position: relative;
+  }
+  .header .inner .top .left{
+    width: 200px;
+    height: 130px;
+    padding-left: 34px;
+    padding-top: 20px;
+    line-height: 1;
+    font-size: 12px;
+    background: url('../images/phone.png') no-repeat left 20px;
+    background-size: 20px auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .header .inner .top .center{
+    width: 118px;
+    padding-top: 20px;
+    margin: 0 auto;
+  } 
+  .header .inner .top .center img{
+    width: 100%;
+    height: auto;
+  }
+  .header .inner .top .right{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    padding-top: 20px;
+  }
+  .header .inner .top .right span{
+    display: block;
+    width: 17px;
+    height: 20px;
+    background: url('../images/user.png') no-repeat left center;
+    background-size: 100% auto;
+  }
+  .header .inner .bottom{
+    width: 1080px;
+    margin: 0 auto;
+    height: 49px;
+    line-height: 49px;
+  }
+  .header .inner .bottom .nav{
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .inner .bottom .nav a{
+    color: #000000;
+  }
+  .header .inner .bottom .nav a.active{
+    color: #bf9477;
+  }
+
+  /* article */
+  .article{
+    width: 100%;
+    background: #f3f3f3;
+  }
+  .article-wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 92px;
+  }
+  .breadcump{
+    height: 48px;
+    line-height: 48px;
+    padding-bottom: 8px;
+    font-size: 12px;
+    color: #6b6b6b;
+  }
+  .breadcump a{
+    color: #6b6b6b;
+  }
+  .breadcump span{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .article-content{
+    width: 952px;
+    padding-left: 118px;
+    padding-right: 100px;
+    background: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    color: #767676;
+  }
+  .article-content .title{
+    height: 88px;
+    padding-top: 40px;
+    font-size: 24px;
+    color: #000000;
+    border-bottom: 1px solid #d2d2d2;
+  }
+  .article-content .title span{
+    font-size: 14px;
+    color: #aaaaaa;
+  }
+  .article-content .article-detail{
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    text-indent: 2em;
+  }
+  .article-content .article-detail p{
+    margin-bottom: 35px;
+  }
+  .article-content .article-detail img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+  }
+
+  /* footer */
+  .footer{
+    background: #1b1b1b;
+    color: #ffffff;
+    /* height: 202px; */
+    width: 100%;
+  }
+  .footer .inner{
+    width: 1530px;
+    margin: 0 auto;
+    background: #1b1b1b;
+  }
+  .footer .footer-content{
+    width: 723px;
+    padding-left: 48px;
+    padding-right: 310px;
+    height: 202px;
+    margin: 0 auto;
+    position: relative;
+    font-weight: bold;
+  }
+  .footer .footer-content .line-1{
+    height: 80px;
+    line-height: 80px;
+    font-size: 18px;
+  }
+  .footer .footer-content .line-2{
+    padding-bottom: 40px;
+    font-size: 14px;
+    text-align: right;
+    line-height: 1;
+  }
+  .footer .footer-content .line-2 span{
+    margin-left: 9px;
+  }
+  .footer .footer-content .line-3{
+    padding-top: 20px;
+    border-top: 1px solid #4c4c4c;
+    font-size: 12px;
+  }
+  .footer .footer-content .line-3 li{
+    /* width: 179px; */
+    text-align: center;
+    line-height: 1;
+    border-right: 1px solid #a8a8a8;
+    border-left: 1px solid #d7d7d7;
+  }
+  .footer .footer-content .line-3 li.item-1{
+    width: 208px;
+    border-left: 0;
+  }
+  .footer .footer-content .line-3 li.item-2{
+    width: 175px;
+  }
+  .footer .footer-content .line-3 li.item-3{
+    width: 179px;
+  }
+  .footer .footer-content .line-3 li.item-4{
+    width: 155px;
+    border-right: 0;
+  }
+  .footer .footer-content img{
+    width: 116px;
+    position: absolute;
+    bottom: 31px;
+    right: 118px;
+  }

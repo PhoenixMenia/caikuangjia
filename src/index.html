@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>首页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./style/reset.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./style/index.css" />
+  <link rel="stylesheet" href="./libs/ft-carousel/ft-carousel.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="inner">
+        <div class="top clear-fix">
+          <div class="left">028-85031160</div>
+          <div class="center">
+            <img src="images/logo.png" alt="">
+          </div>
+          <div class="right">
+            <a href="./views/login.html"><span></span></a>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="nav">
+            <a href="javascript:void(0)" class="active">首页</a>
+            <a href="./views/diamond.html">宝石</a>
+            <a href="./views/service.html">定制服务</a>
+            <a href="./views/purchasing.html">全球采购</a>
+            <a href="./views/journal.html">采矿家日记</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="inner">
+        <div class="left">
+          <h3>莫桑比克 - 新兴的红宝石产地</h3>
+          <p>有着长达几个世纪的红宝石发掘记录</p>
+          <p>但莫桑比克红宝石在本世纪初才凭借它优异的品质和丰富的矿藏正式进入宝石市场</p>
+          <p>上市后迅速引起了市场的高度关注</p>
+          <p>并成为当今世界红宝石产量最大的国家</p>
+          <p>对古老的宝石市场也产生着新的冲击震撼</p>
+          <div class="color-line"></div>
+        </div>
+        <div class="center">
+          <div class="ft-carousel" id="carousel-banner">
+            <ul class="carousel-inner">
+              <li class="carousel-item"><img src="images/banner_1.jpg" /></li>
+              <li class="carousel-item"><img src="images/banner_1.jpg" /></li>
+              <li class="carousel-item"><img src="images/banner_1.jpg" /></li>
+              <li class="carousel-item"><img src="images/banner_1.jpg" /></li>
+              <li class="carousel-item"><img src="images/banner_1.jpg" /></li>
+              <li class="carousel-item"><img src="images/banner_1.jpg" /></li>
+            </ul>
+          </div>
+        </div>
+        <div class="right"></div>
+      </div>
+    </div>
+    <div class="article">
+      <div class="inner">
+        <div>
+          红之热情，蓝之纯净，绿之安详，橙之愉悦<br/>
+          色彩缤纷的魅力让我们都能寻找到属于自己的幸福感
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="inner">
+        <div class="footer-content">
+          <p class="line-1">“上帝存在于细节中”</p>
+          <p class="line-2">by<span>密斯·凡德罗</span></p>
+          <ul class="line-3 clear-fix">
+            <li class="f-left item-1">Copyright © 2016.pngems.com</li>
+            <li class="f-left item-2">All Rights Reserverd.</li>
+            <li class="f-left item-3">版权所有@2018 彩矿家</li>
+            <li class="f-left item-4">蜀ICP备16005978号-1</li>
+          </ul>
+          <img src="images/code.jpg" alt="二维码" title="二维码">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="libs/jquery.min.js"></script>
+<script src="libs/ft-carousel/ft-carousel.min.js"></script>
+<script type="text/javascript">
+	$("#carousel-banner").FtCarousel({
+    index: 0,
+		auto: true,
+		time: 1000,
+		indicators: true,
+		// buttons: false
+  });
+</script>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="../style/reset.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../style/login.css" />
+  <link rel="stylesheet" href="../libs/pop-modal/popModal.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="inner">
+        <div class="top clear-fix">
+          <div class="left">028-85031160</div>
+          <div class="center">
+            <img src="../images/logo.png" alt="">
+          </div>
+          <div class="right">
+            <span></span>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="nav">
+            <a href="../index.html" class="active">首页</a>
+            <a href="./diamond.html">宝石</a>
+            <a href="./service.html">定制服务</a>
+            <a href="./purchasing.html">全球采购</a>
+            <a href="./journal.html">采矿家日记</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="login-wrapper">
+        <div class="login-title">
+          <span class="left active">登陆</span>
+          <span class="pointer" id="switch-register">注册</span>
+        </div>
+        <div class="login-input">
+          <input type="text" placeholder="输入手机号">
+        </div>
+        <div class="login-input last">
+          <input type="password" placeholder="输入密码">
+        </div>
+        <div class="btn-wrap">
+          <p class="pointer" id="submit-login">登陆</p>
+        </div>
+      </div>
+      <div class="register-wrapper hide">
+        <div class="login-title">
+          <span class="left pointer" id="switch-login">登陆</span>
+          <span class="active">注册</span>
+        </div>
+        <div class="login-input">
+          <input type="text" placeholder="输入手机号">
+        </div>
+        <div class="login-input">
+          <input type="password" placeholder="输入密码">
+        </div>
+        <div class="login-input last">
+          <input type="password" placeholder="再次输入密码">
+        </div>
+        <div class="btn-wrap">
+          <p class="pointer" id="submit-register">注册</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="inner">
+        <div class="footer-content">
+          <p class="line-1">“上帝存在于细节中”</p>
+          <p class="line-2">by<span>密斯·凡德罗</span></p>
+          <ul class="line-3 clear-fix">
+            <li class="f-left item-1">Copyright © 2016.pngems.com</li>
+            <li class="f-left item-2">All Rights Reserverd.</li>
+            <li class="f-left item-3">版权所有@2018 彩矿家</li>
+            <li class="f-left item-4">蜀ICP备16005978号-1</li>
+          </ul>
+          <img src="../images/code.jpg" alt="二维码" title="二维码">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- dialog -->
+  <div id="content" >
+    请输入手机号码
+    <div class="popModal_footer">
+      <button type="button" data-popModalBut="ok">ok</button>
+      <button type="button" data-popModalBut="cancel">cancel</button>
+    </div>
+  </div>
+</body>
+<script src="../libs/jquery.min.js"></script>
+<script src="../libs/pop-modal/popModal.js"></script>
+<script>
+  $(function () {
+    // 显示注册
+    $('#switch-register').on('click', function () {
+      $('.register-wrapper').removeClass('hide');
+      $('.login-wrapper').addClass('hide');
+    })
+
+    // 显示登陆
+    $('#switch-login').on('click', function () {
+      $('.login-wrapper').removeClass('hide');
+      $('.register-wrapper').addClass('hide');
+    })
+
+    // 登陆
+    $('#submit-login').on('click', function () {
+      console.log('login');
+      // $('#content').dialogModal({
+      //   onOkBut : function(){
+      //     console.log('ok');
+      //   },
+      //   onCancelBut : function(){},
+      //   onLoad : function(){},
+      //   onClose : function(){},
+      // });
+    })
+    
+
+    // 注册
+    $('#submit-register').on('click', function () {
+      console.log('register');
+    })
+  });
+</script>
+</html>
