@@ -73,6 +73,7 @@
   .content-wrap{
     width: 100%;
     padding-top: 25px;
+    padding-bottom: 72px;
     background-color: #f3f3f3;
   }
   .content-area{
@@ -80,7 +81,45 @@
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 190px;
     background-color: #ffffff;
+  }
+  .content-area>h2{
+    height: 74px;
+    line-height: 74px;
+    border-bottom: 1px dashed #e3e3e3;
+    font-size: 20px;
+    color: #666666;
+    font-weight: bold;
+  }
+  .content-area .list-item{
+    padding-top: 65px;
+    font-size: 18px;
+  }
+  .content-area .list-item .left{
+    float: left;
+    width: 75px;
+    padding-left: 94px;
+    padding-right: 35px;
+    color: #1d1d1d;
+    font-weight: bold;
+  }
+  .content-area .list-item .right{
+    float: left;
+    width: 516px;
+    color: #666666;
+  }
+  .content-area .tips{
+    padding-top: 48px;
+    padding-left: 204px;
+  }
+  .content-area .tips span{
+    display: inline-block;
+    background-color: #e6e6e6;
+    color: #838383;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 5px 10px;
   }
 
   
